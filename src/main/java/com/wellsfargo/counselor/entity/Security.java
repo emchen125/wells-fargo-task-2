@@ -29,7 +29,10 @@ public class Security {
     private Int total;
 
     @Column(nullable = false)
-    private Long portfolioId;
+    private String purchaseDate;
+
+    @ManyToOne
+    private Portfolio portfolioId;
 
 
     protected Security() {
